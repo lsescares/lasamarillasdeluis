@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   deploy-page:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@2.3.1
