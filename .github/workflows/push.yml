@@ -1,0 +1,17 @@
+name: deploy pagina
+on:
+  push:
+    branche:
+      - main
+jobs:
+  deploy-page:
+    runs-on: ubuntu-lastest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@2.3.1
+
+      - name: Checkout
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: .
